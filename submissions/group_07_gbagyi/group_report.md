@@ -25,7 +25,7 @@ The instructor’s Gbagyi unseen file is scripture-register prose (shekwoi, jesu
 
 3. Data sources and provenance
 
-The raw data file (JSONL) records every webpage the scraper successfully downloaded, including English catalogue/encyclopedia pages. Those pages are not Gbagyi running text. The processed corpus is built only from authentic Gbagyi sentences after documented filters.
+The raw data file (JSONL) records every webpage the scraper successfully downloaded, including English catalogue/encyclopedia pages. Those pages are not Gbagyi running text. The processed corpus is built only from authentic Gbagyi sentences after documented.
 
 Source classes
 
