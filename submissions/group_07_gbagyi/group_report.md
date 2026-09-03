@@ -11,7 +11,7 @@ This report presents a reproducible, low-resource NLP pipeline built for the Gba
 
 1. Introduction
 
-Gbagyi (ISO 639-3: gbr) is a Nupoid language of central Nigeria. Written resources are sparse, orthography is not fully standardised, and tone is often unmarked in published digital text. This assignment asks each group to build an inspectable baseline: scrape authentic text, tokenise it without English pretrained tools, test Zipf’s law, and estimate a smoothed n-gram language model.
+Gbagyi (ISO 639-3: gbr) is a Nupoid language of central Nigeria. Written resources are sparse, orthography is not fully standardised, and tone is often unmarked in published digital text. This assignment asks each group to build an inspectable baseline: scrape authentic text, tokenise it without English pretrained tools, test Zipf’s law, and estimate a smoothed an understanding language model.
 
 The instructor’s Gbagyi unseen file is scripture-register prose (shekwoi, jesun, yahudiyi, aduwa). We therefore prioritised publicly readable Gbagyi Bible chapters that match that register, after verifying that requests receive server-rendered text and that robots.txt allows /bible/ paths.
 
