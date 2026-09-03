@@ -16,11 +16,7 @@ Our pipeline produces 22,127 sentences, 403,441 tokens, and 12,798 unique words.
 
 1. Introduction
 
-The Gbagyi language (ISO 639-3: gbr) is a Nupoid language in central Nigeria. Textual sources have been scarce, and there are issues with consistency in orthography. Tones have commonly been excluded when they are printed.
-
-The goal is therefore to design a truly explainable basic NLP infrastructure-scraping publicly accessible Gbagyi text files that conform to the register specified in the official testing document.
-
-We implement an appropriately designed scraper and construct our own Gbagyi tokenizer, test a standard range of test metrics-Zipf's law and n-gram language model-against both the scraped and (when relevant) original data. This is accomplished without any reliance on english pre-trained NLP techniques whatsoever.
+Gbagyi (ISO 639-3: gbr) is a Nupoid language of central Nigeria. Written resources are sparse, orthography is not fully standardised, and tone is often unmarked in published digital text. This assignment asks each group to build an inspectable baseline: scrape authentic text, tokenise it without English pretrained tools, test Zipf’s law, and estimate a smoothed an understanding language model.
 
 The unseen test file given uses an equivalent register format-in this particular case, it relies on bible/shekwoi registers. We therefore use scripture-Yahua, shekwoi, Aduwa and jesun-as our primary data source, and selectively download individual documents from Biblia/YouVersion once we have confirmed that a human has rendered the correct HTML and no captcha challenge appears on web page. We also source Wikipedia and various encyclopedia entries with caution, with these secondary sources offering descriptions of Gbagyi generally, though, as addressed below. Robots.txt was examined to ensure that relevant portions of the web can be freely indexed.
 
@@ -30,7 +26,7 @@ The unseen test file given uses an equivalent register format-in this particular
 
 2. Ensure that tokenization uses Unicode-safe techniques.
 
-3. Produce an accurate list of at least 30 common Gbagyi function words, without any additions based on assumed meaning.
+The raw data file (JSONL) records every webpage the scraper successfully downloaded, including English catalogue/encyclopedia pages. Those pages are not Gbagyi running text. The processed corpus is built only from authentic Gbagyi sentences after documented.
 
 4. Calculate the Zipf exponent from the sourced Gbagyi corpus.
 
